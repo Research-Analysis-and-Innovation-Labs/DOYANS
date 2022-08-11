@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-&&etypp+7u3z^x63d#&m5&roli!x-wfrs)^wpltdb*p$t^6sj4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# hostname for the site
 ALLOWED_HOSTS = []
 
 
@@ -37,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # applications
+    # 'web', # frontend
+    # 'dashboard', # user backend
+    # 'api', # api endpoints
 ]
 
 MIDDLEWARE = [
@@ -54,7 +59,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'], # template directories
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
