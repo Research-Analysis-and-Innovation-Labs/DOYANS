@@ -16,7 +16,7 @@ class UserProfile(models.Model):
         ('Male','Male'),('Female','Female'),('Transgender','Transgender')    
     )
 
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    username = models.OneToOneField(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     address = models.CharField(max_length=250,null=True)
