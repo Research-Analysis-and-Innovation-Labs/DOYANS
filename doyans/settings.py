@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     # applications
     'dashboard', # user backend
     'website', # frontend --> open accessible to everyone
-
 ]
 
 MIDDLEWARE = [
@@ -126,5 +125,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Custom user model
-AUTH_USER_MODEL = 'dashboard.User'
+# Custom user model in dashboard app
+# AUTH_USER_MODEL = 'dashboard.User'
