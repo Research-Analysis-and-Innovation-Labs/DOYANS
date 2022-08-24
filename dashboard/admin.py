@@ -4,4 +4,4 @@ from django.contrib import admin
 from dashboard import models as dashboard_models
 
 # Register your models here.
-admin.site.register(dashboard_models.statistics)
+admin.site.register(dashboard_models.Statistics)
