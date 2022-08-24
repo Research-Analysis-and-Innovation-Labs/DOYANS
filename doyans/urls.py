@@ -20,4 +20,9 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls), # admin
+
+    # applications
+    path('',include('website.urls')), # website
+    path('dashboard/', include('dashboard.urls')), # dashboard
+    path('blog/', include('blog.urls')), # blog
 ]

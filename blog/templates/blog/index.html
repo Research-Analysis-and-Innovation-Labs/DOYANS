@@ -1,0 +1,45 @@
+{% extends "./partials/base.html" %} 
+{% load static %}
+
+{% block title %} 
+My Blog 
+{% endblock %} 
+
+{% block css_files %}
+  <link rel="stylesheet" href='{% static "blog/css/post.css" %}' />
+  <link rel="stylesheet" href='{% static "blog/css/app.css" %}' />
+  <link rel="stylesheet" href='{% static "blog/css/index.css" %}' />
+{% endblock %}
+
+{% block content %}
+<header id="main-navigation">
+    <h1><a href="{% url 'index' %}">BLOGS</a></h1>
+    <nav>
+      <a href="{% url 'posts' %}">Read All</a>
+    </nav>
+  </header>
+
+<section id="welcome">
+  <header>
+    <img src='{% static "blog/img/sajaltiwari.jpg" %}' alt="sajal tiwari" />
+    <h2>DOYANS BLOG'S</h2>
+  </header>
+  <p>DOYANS STORIES</p>
+</section>
+
+<section id="latest-posts">
+  <h2>My Latest Thoughts</h2>
+
+  <ul>
+    {% for post in posts %}
+      {% include "blog/partials/post.html" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What is Doyans?</h2>
+  <p>
+    LOREM IPSUM
+</section>
+{% endblock %}
