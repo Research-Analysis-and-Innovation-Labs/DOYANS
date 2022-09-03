@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import Http404,HttpResponse,HttpResponseNotAllowed,HttpResponseNotFound,HttpResponseRedirect
 
+from .models import Statistic
+
 # Create your views here.
 
 # 404 error page

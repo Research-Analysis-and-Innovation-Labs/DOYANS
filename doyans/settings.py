@@ -37,10 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     # applications
     'dashboard', # user backend --> accessible to users only
     'website', # frontend --> open accessible to everyone
     'blog', # blog application --> accessible to everyone
+
+    # drf swagger
+    'drf_yasg',
+
 ]
 
 MIDDLEWARE = [

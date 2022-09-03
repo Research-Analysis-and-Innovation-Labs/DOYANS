@@ -1,7 +1,15 @@
 from django.contrib import admin
 
-# applications
-from dashboard import models as dashboard_models
+from .models import Statistic
+
+# configure admin site
+# statistics
+class StatisticAdmin(admin.ModelAdmin):
+    prepopulated_fields: {'slug': ("name",)}
+    list_filter: ('name','grade',)
+    list_display: ('name','grade',)
+
 
 # Register your models here.
-admin.site.register(dashboard_models.Statistics)
+# statistics
+admin.site.register(Statistic,StatisticAdmin) # statistics admin configuration

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %} 
-All My Posts
+All Posts
 {% endblock %} 
 
 {% block css_files %}
@@ -11,6 +11,7 @@ All My Posts
 {% endblock %}
 
 {% block content %}
+
 <section id="all-posts">
   <h2>Infomartion</h2>
 
@@ -20,4 +21,11 @@ All My Posts
     {% endfor %}
   </ul>
 </section>
+
+<p>Total Posts: {{total_posts}}</p>
+<p>Average rating: {{average_rating.rating__avg}}</p>
+<p>Mimum rating: </p>
+
+
+
 {% endblock %}
