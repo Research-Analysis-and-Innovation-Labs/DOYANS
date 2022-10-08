@@ -1,3 +1,5 @@
+# admin dashboard configurations
+
 from ast import Add
 from django.contrib import admin
 

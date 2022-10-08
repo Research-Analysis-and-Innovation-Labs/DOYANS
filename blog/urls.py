@@ -1,3 +1,5 @@
+# path address and map with funcitons,classes in views.py
+
 from django.urls import path
 from django.urls import include,reverse
 

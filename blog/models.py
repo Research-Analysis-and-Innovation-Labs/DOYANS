@@ -1,3 +1,5 @@
+# classes to save information in database
+
 from django.db import models
 from django.core.validators import MinLengthValidator, MaxLengthValidator # validators for fields
 from django.urls import reverse

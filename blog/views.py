@@ -1,3 +1,5 @@
+# methods and classes to acept request and send response.
+
 from logging import raiseExceptions
 from datetime import date
 from urllib import request

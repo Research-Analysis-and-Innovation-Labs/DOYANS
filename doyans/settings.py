@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'dashboard', # user backend --> accessible to users only
     'website', # frontend --> open accessible to everyone
     'blog', # blog application --> accessible to everyone
+    'sample', # testing
 
     # drf swagger
     'drf_yasg',
