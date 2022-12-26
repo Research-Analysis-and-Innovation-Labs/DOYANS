@@ -5,4 +5,4 @@
 1. Applications
 a. api --> API Endpoints
 b. dashboard --> User Backend
-c. web --> frontend designs
+c. data --> Data Records
